@@ -22,6 +22,10 @@ app.get('/privacy', (req, res) => {
   res.sendFile(path.join(__dirname, 'privacy.html'));
 });
 
+app.get('/team', (req, res) => {
+  res.sendFile(path.join(__dirname, 'team.html'));
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
